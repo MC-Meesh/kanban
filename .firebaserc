@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "kanban-angularfire": {
+      "hosting": {
+        "kanban": [
+          "kanban-angularfire"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "kanban-angularfire"
+  }
+}
