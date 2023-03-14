@@ -16,6 +16,9 @@ import { provideFunctions,getFunctions } from '@angular/fire/functions';
 
 
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +33,7 @@ import { provideFunctions,getFunctions } from '@angular/fire/functions';
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
-    provideFunctions(() => getFunctions())
+    provideFunctions(() => getFunctions()),
   ],
   providers: [
     ScreenTrackingService,UserTrackingService

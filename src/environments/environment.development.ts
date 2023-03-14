@@ -1,4 +1,5 @@
 export const environment = {
+  production: false,
   firebase: {
     projectId: 'kanban-angularfire',
     appId: '1:572527375733:web:c9077e8b9b24483d290f3c',
