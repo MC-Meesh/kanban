@@ -10,6 +10,8 @@ import { AppRoutingModule } from "./app-routing.module";
 
 import { environment } from "../environments/environment";
 
+//AngularFire Setup
+//https://github.com/angular/angularfire/blob/master/docs/install-and-setup.md
 import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFirestoreModule } from "@angular/fire/compat/firestore";
 import { AngularFireAuthModule } from "@angular/fire/compat/auth";
