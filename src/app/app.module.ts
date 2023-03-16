@@ -23,7 +23,7 @@ import { AngularFireAuthModule } from "@angular/fire/compat/auth";
     BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
-    RouterModule.forRoot([]),
+    RouterModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule
