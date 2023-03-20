@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+import { BoardService } from '../board.service';
+import { Board } from '../board.model';
 
 @Component({
   selector: 'app-board',
@@ -6,5 +9,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./board.component.scss']
 })
 export class BoardComponent {
+  @Input() board:any;
 
+  constructor(private boardService: BoardService) {}
+
+  taskDrop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.board.tasks!, event.previousIndex, event.currentIndex);
+    this.boardService.updateTasks(this.board.id!, this.board.tasks);
+  }
 }
