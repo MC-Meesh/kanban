@@ -23,10 +23,12 @@
   opacity: 0.5;
 }
 
-.blue { background: #71deff; color: black; }
-.green { background: #36e9b6; color: black;  }
-.yellow { background: #ffcf44; color: black; }
-.purple { background: #b15cff; }
-.red { background: #e74a4a; }
 
-.gray { background: gray; text-decoration: line-through; }
+
+.blue { background: #71deff; color: black; padding: 15px;}
+.green { background: #36e9b6; color: black;  padding: 15px;}
+.yellow { background: #ffcf44; color: black; padding: 15px;}
+.purple { background: #b15cff; padding: 15px;}
+.red { background: #e74a4a; padding: 15px; }
+
+.gray { background: gray; text-decoration: line-through; padding: 10px;}
