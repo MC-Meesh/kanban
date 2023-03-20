@@ -12,10 +12,9 @@ import { TaskDialogComponent } from '../dialogs/task-dialog.component';
   styleUrls: ['./board.component.scss']
 })
 export class BoardComponent {
-  dialog:MatDialog;
   @Input() board:any;
 
-  constructor(private boardService: BoardService) {}
+  constructor(private boardService: BoardService, public dialog: MatDialog) {}
 
   taskDrop(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.board.tasks, event.previousIndex, event.currentIndex);
